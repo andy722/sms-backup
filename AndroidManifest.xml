@@ -5,12 +5,21 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application android:icon="@drawable/icon" android:label="sms-backup">
+
         <receiver android:name=".MessageReceiver">
             <intent-filter>
                 <action android:value="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
+        <activity android:name=".Preferences"
+                  android:label="SMSBackup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
+
 </manifest>

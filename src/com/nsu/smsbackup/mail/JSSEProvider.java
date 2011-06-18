@@ -1,8 +1,11 @@
-package com.nsu.smsbackup;
+package com.nsu.smsbackup.mail;
 
 import java.security.AccessController;
 import java.security.Provider;
 
+/**
+ * @author andy
+ */
 public final class JSSEProvider extends Provider {
 
     public JSSEProvider() {
