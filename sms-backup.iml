@@ -31,8 +31,8 @@
     <orderEntry type="jdk" jdkName="Android 2.2 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Android 2.2 Platform" level="application" />
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library name="javamail">
+    <orderEntry type="module-library">
+      <library>
         <CLASSES>
           <root url="jar://$MODULE_DIR$/libs/activation.jar!/" />
           <root url="jar://$MODULE_DIR$/libs/mail.jar!/" />
