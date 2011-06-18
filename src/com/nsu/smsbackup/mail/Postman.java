@@ -82,8 +82,7 @@ public class Postman extends Authenticator {
      * Sends {@code data} marked with {@code id} to the specified account (from the same account).
      */
     public void backup(String id, String data) {
-        String backupId = String.format("SMS from \"%s\"", id);
-        send(backupId, data, account);
+        send(id, data, account);
     }
 
 }
