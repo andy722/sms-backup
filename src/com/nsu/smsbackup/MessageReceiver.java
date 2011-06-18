@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.telephony.SmsMessage;
 import android.util.Log;
 import com.nsu.smsbackup.mail.Postman;
@@ -37,7 +38,7 @@ public class MessageReceiver extends BroadcastReceiver {
             return;
 
         // get account details
-        final SharedPreferences prefs = context.getSharedPreferences("smsbackup", MODE_PRIVATE);
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         final String username = prefs.getString("email", null);
         final String password = prefs.getString("password", null);
         if (username == null || password == null) {

@@ -8,7 +8,7 @@
 
         <receiver android:name=".MessageReceiver">
             <intent-filter>
-                <action android:value="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
